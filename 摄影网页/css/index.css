@@ -1,0 +1,471 @@
+.wrapper{
+	margin: 0 auto;
+	width: 75rem;
+}
+
+body{
+	background-color: #f3f5f7;
+	/* overflow: auto; */
+}
+
+/* 头部区域 */
+.header{
+	/* 使头部固定到网页顶部 */
+	/* position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999; */
+	height: 100px;
+	background-color: #fff;
+}
+
+.header .wrapper{
+	display: flex;
+	padding-top: 29px;
+}
+/* logo区域 */
+.logo a{
+	display: block;
+	width: 66px;
+	height: 50px;
+	background-image: url(../images/微信图片_20241026161825.jpg);
+	background-size: contain;
+	font-size: 0;
+	align-items: center;
+}
+
+/* 导航区域*/
+.nav{
+	margin-left: 50px;
+}
+
+.nav ul{
+	display: flex;
+}
+
+.nav li{
+	margin-right: 24px;
+	line-height: ;
+}
+
+.nav li a{
+	display: block;
+	padding: 6px 8px;
+	line-height: 27px;
+	font-size: 19px;
+}
+
+.nav li .active,
+.nav li a:hover{
+	border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索区域*/
+.search{
+	display: flex;
+	padding-left: 19px;
+	padding-right: 12px;
+	width: 412px;
+	height: 40px;
+	background-color:#f3f5f7 ;
+	border-radius: 0 20px;
+	margin-left: 64px;
+}
+
+.search input{
+	flex: 1;
+	border: 0;
+	/* 设置透明色 */
+	background-color: transparent;
+	/* 去掉点击时边框 */
+	outline: none;
+	font-size: 14px;
+}
+
+.search a{
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/微信图片_20241026161847.jpg);
+	align-self: center;
+	background-size: contain;
+}
+
+/* 用户区域*/
+.user{
+	margin-left: 32px;
+	margin-top: 4px;
+}
+
+.user img{
+	width: 35px;
+	height: 35px;
+	margin-right: 7px;
+	border-radius: 17.5px;
+	/* vertical-align处理行内块和行内垂直方向对齐方式*/
+	vertical-align: middle;
+}
+
+.user span{
+	font-size: 16px;
+	color: #666;
+}
+
+/* 横幅（banner）区域 */
+.banner{
+	height: 420px;
+	background-color: #d6e3de;
+}
+
+.banner .wrapper{
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+	width: 1000px;
+	background-image: url(../images/微信图片_20241026161851.jpg);
+}
+/* 侧导航 */
+.banner .left{
+	width: 150px;
+	height: 420px;
+	padding: 3px 20px;
+	background-image: url(../images/微信图片_20241026161858.jpg) ;
+	text-align: center;
+}
+
+.banner .left a{
+	display: block;
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	color: azure;
+}
+
+.banner .left a:hover{
+	color:#00a4ff;
+}
+/*我的区域*/
+.banner .right{
+	width: 218px;
+	height: 305px;
+	margin-top: 60px;
+	background-image: url(../images/微信图片_20241026161858.jpg);
+	border-radius: 10px;
+}
+
+.banner .right h3{
+	font-size: 15px;
+	margin-left: 14px;
+	height: 48px;
+	line-height: 48px;
+	color: white;
+}
+
+.banner .right .content{
+	height: 257px;
+	border-radius: 10px;
+	background-color: antiquewhite;
+	padding: 14px;
+}
+
+.banner .right dl{
+	margin-bottom: 12px;
+}
+
+.banner .right dt{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;;
+}
+
+.banner .right dd{
+	border-bottom: 1px solid #c0c0c0;
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.banner .right dd span{
+	color:#550000;
+}
+
+.banner .right dd strong{%%jiahaodashuaibi
+	color: #7d7d7d;
+	font-weight: 400;
+}
+
+.banner .right .buttom{
+	display: block;
+	border-radius: 15px;
+	background-color: #73b0ff;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin-top: 25px;
+}
+
+/* 推荐区域 */
+.recommend{
+	height: 60px;
+	background-color: white;
+	margin-top: 11px;
+	box-shadow: 0px 1px 2px 0px rgba(211,211,211,0.5);
+	padding:0 20px ;
+	line-height: 60px;
+	display: flex;
+}
+
+.recommend h3{
+	color:#00a4ff;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.recommend ul{
+	/* 父级剩余尺寸全占据 */
+	flex: 1;
+	display: flex;
+}
+
+.recommend ul li a{
+	padding: 0 35px ;
+	border-right: 1px solid #e0e0e0;
+	font-size: 18px;
+}
+
+.recommend ul li:last-child a{
+	border-right: 0;
+}
+
+.recommend .change{
+	font-size: 18px; 
+	color: #00a4ff;
+}
+
+/* 具体内容区域 */
+.course{
+	margin-top: 15px;
+}
+
+/* .course */
+.hd{
+	display: flex;
+	height: 60px;
+	line-height: 60px;
+	justify-content: space-between;
+}
+
+.hd h3{
+	font-size: 21px;
+	font-weight: 400;
+}
+
+.hd .more{
+	/* background-image: url(小箭头); */
+	/* padding-right:20px;*/
+	font-size: 14px;
+	color: #999;
+}
+
+.bd ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.bd li{
+	width: 285px;
+	height: 400px;
+	background-color: pink;
+	margin-bottom: 14px;
+}
+
+.bd li .pic{
+	height: 280px;
+}
+/* 图片按尺寸填充*/
+.bd li .pic img{
+	width: 285px;
+	height: 280px;
+	background-size: contain;
+}
+
+.bd li .text{
+	height: 120px;
+	background-color: #fff;
+	padding: 20px;
+}
+.bd li .text h4{
+	height: 40px;
+	margin-bottom: 13px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+} 
+
+.bd li .text p{
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+}
+
+.bd li .text p span{
+	color: orange;	
+}
+/* 第三区域 */
+.hd ul{
+	display: flex;
+}
+
+.hd ul li{
+	margin-right: 60px;
+	font-size: 16px;
+}
+
+/* .hd ul li:first-child{
+	color: #00a3ff;
+} */
+
+.hd ul .active{
+	color: #00a4ff;
+}
+
+.body{
+	display: flex;
+	justify-content: space-between;
+}
+
+.body .left{
+	width: 228px;
+}
+
+.body .left img{
+	width: 200px;
+	height: 515px;
+	background-size: auto;
+}
+
+.body .right{
+	width: 957px;
+	height: 290px;
+}
+
+.body .right .top{
+	margin-bottom: 15px;
+	height: 100px;
+}
+.body .right .top img{
+	height: 100px;
+	width: 960px;
+}
+
+.body .right .bottom ul{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.body .right .bottom img{
+	height: 310px;
+	width: 230px;
+	background-size: contain;
+
+}
+.body li {
+	height: 400px;
+	background-color: #fff;
+	padding: 20px;
+}
+.body li .text h4{
+	height: 40px;
+	margin-bottom: 2px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+} 
+
+.body li .text p{
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+}
+
+.body li .text p span{
+	color: orange;	
+}
+/* 版权区域 */
+.footer{
+	height: 273px;
+	background-color: white;margin-top: 60px;
+	padding-top: 60px;
+}
+
+.footer .wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .wrapper .left{
+	width: 440px;
+}
+
+.footer .left img{
+	width: 100px;
+	height: 100px;
+	margin-right: 7px;
+	border-radius: 50px;
+	/* vertical-align处理行内块和行内垂直方向对齐方式*/
+	vertical-align: middle;
+}
+ 
+.footer .left span{
+	font-size: 35px;
+	color: #00a3ff;
+	vertical-align: middle;
+}
+
+.footer .left p{
+	text-indent: 2em;
+	color: #a3a3a3;
+}
+
+.footer .left .con{
+	display: block;
+	text-align: center;
+	height: 46px;
+	line-height: 23px;
+	font-size: 16px;
+	
+}
+
+.footer .left a{
+	color: #00a4ff;
+}
+
+.footer .right{
+	display: flex;
+}
+
+.footer .right dl{
+	margin-left: 130px;
+}
+
+.footer .right dt{
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.footer .right a{
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+}
+
+.footer .right a:hover{
+	color: blue;
+}
